@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Storyboard-->
+        <scene sceneID="9VU-he-nCM">
+            <objects>
+                <viewController storyboardIdentifier="StoryboardListViewController" title="Storyboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="o9j-y6-Jot" customClass="StoryboardListViewController" customModule="UITableViewTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IFo-3f-nY6">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9eR-W6-FKU">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StoryboardCell" rowHeight="103" id="c15-XQ-jy5" customClass="StoryboardCell" customModule="UITableViewTutorial" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="103"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c15-XQ-jy5" id="Umr-F4-VhS">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="103"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f82-ih-iQo" userLabel="BodyLabel">
+                                                    <rect key="frame" x="10" y="37" width="373" height="56"/>
+                                                    <string key="text">애리차는 살엣퇑게 앙쵢진 단더시게 다오타며어서 재엔치에 시락호도믐을. 걱러쳐슨제 커밀 펑알오이 아휴쟁어서 레프어 아짬으어서 굴쇼애라가 블반거나 포멱뎌외의 악스틸둔을 외이욱첸는다. 채아 그잘헨컬아지만 빈누야에 즈재탄다 망제게 길닐은가뇐힝탄구다 조모리가딴이고 잔괸앙인어라. 젤이웅옸발아도 응나와 사이시지는 나야냎헜은 킸팜으로. 밤브어 춧개를 히아 으아로삾겁는다 갸서루구버고 냐올스자메힐 당악굤손가, 칗애락미를. 야싱몬릍 버주내옹수의, 븜어애다 시크 이호줐힌고 달가가 인여조. 칸진조아 버세잰 네캋으에 냐럭암함드는 심현 닥가카삭. 딘이뫈합아 청브사넹에 람사로 솨던 잔네도는 아올후요로작아야 나이도 넨시따고 그흦어자므어 트코석단넬으로. 송둬 로바군씌무달에 나논의 녀아이능잘이고, 시핸귕처럼 저흐인거가 단공차다.  
+</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dC-8w-1uk" userLabel="TitleLabel">
+                                                    <rect key="frame" x="10" y="10" width="373" height="17"/>
+                                                    <string key="text">애리차는 살엣퇑게 앙쵢진 단더시게 다오타며어서 재엔치에 시락호도믐을. 걱러쳐슨제 커밀 펑알오이 아휴쟁어서 레프어 아짬으어서 굴쇼애라가 블반거나 포멱뎌외의 악스틸둔을 외이욱첸는다. 채아 그잘헨컬아지만 빈누야에 즈재탄다 망제게 길닐은가뇐힝탄구다 조모리가딴이고 잔괸앙인어라. 젤이웅옸발아도 응나와 사이시지는 나야냎헜은 킸팜으로. 밤브어 춧개를 히아 으아로삾겁는다 갸서루구버고 냐올스자메힐 당악굤손가, 칗애락미를. 야싱몬릍 버주내옹수의, 븜어애다 시크 이호줐힌고 달가가 인여조. 칸진조아 버세잰 네캋으에 냐럭암함드는 심현 닥가카삭. 딘이뫈합아 청브사넹에 람사로 솨던 잔네도는 아올후요로작아야 나이도 넨시따고 그흦어자므어 트코석단넬으로. 송둬 로바군씌무달에 나논의 녀아이능잘이고, 시핸귕처럼 저흐인거가 단공차다.  
+</string>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="f82-ih-iQo" firstAttribute="top" secondItem="5dC-8w-1uk" secondAttribute="bottom" constant="10" id="8ld-gb-hRL"/>
+                                                <constraint firstAttribute="bottom" secondItem="f82-ih-iQo" secondAttribute="bottom" constant="10" id="Gks-aF-p5Y"/>
+                                                <constraint firstItem="5dC-8w-1uk" firstAttribute="leading" secondItem="Umr-F4-VhS" secondAttribute="leading" constant="10" id="GrF-l0-8Gu"/>
+                                                <constraint firstAttribute="trailing" secondItem="f82-ih-iQo" secondAttribute="trailing" constant="10" id="SeB-BN-0Aa"/>
+                                                <constraint firstItem="5dC-8w-1uk" firstAttribute="top" secondItem="Umr-F4-VhS" secondAttribute="top" constant="10" id="cbZ-P5-ggY"/>
+                                                <constraint firstItem="f82-ih-iQo" firstAttribute="leading" secondItem="5dC-8w-1uk" secondAttribute="leading" id="ipg-3g-ERS"/>
+                                                <constraint firstAttribute="trailing" secondItem="5dC-8w-1uk" secondAttribute="trailing" constant="10" id="z3G-Ek-uFu"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bodyLabel" destination="f82-ih-iQo" id="Bzb-4U-ZRG"/>
+                                            <outlet property="titleLabel" destination="5dC-8w-1uk" id="U3K-Ru-br8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="D9V-Ux-rJR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="D9V-Ux-rJR" firstAttribute="trailing" secondItem="9eR-W6-FKU" secondAttribute="trailing" id="ANa-wd-hXS"/>
+                            <constraint firstItem="9eR-W6-FKU" firstAttribute="top" secondItem="D9V-Ux-rJR" secondAttribute="top" id="Jjf-1w-fPV"/>
+                            <constraint firstItem="9eR-W6-FKU" firstAttribute="leading" secondItem="D9V-Ux-rJR" secondAttribute="leading" id="UBJ-nK-CpN"/>
+                            <constraint firstItem="D9V-Ux-rJR" firstAttribute="bottom" secondItem="9eR-W6-FKU" secondAttribute="bottom" id="el4-Hw-9Aa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Storyboard" id="zbd-XN-BSx"/>
+                    <connections>
+                        <outlet property="MyTableView" destination="9eR-W6-FKU" id="eW4-fp-awH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LLV-j0-BtC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1232.824427480916" y="-4.2253521126760569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

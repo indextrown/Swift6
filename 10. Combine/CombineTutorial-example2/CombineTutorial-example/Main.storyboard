@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XCT-Uz-9jJ">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CombineTutorial_example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bFI-0d-iLa">
+                                <rect key="frame" x="0.0" y="162" width="393" height="770"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pIL-PZ-m1c">
+                                        <rect key="frame" x="0.0" y="-143" width="393" height="1175.333333333333"/>
+                                        <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="10" bottom="8" trailing="10"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="pIL-PZ-m1c" firstAttribute="bottom" secondItem="cvc-Ib-kUg" secondAttribute="bottom" id="5b8-yJ-pDi"/>
+                                    <constraint firstItem="pIL-PZ-m1c" firstAttribute="trailing" secondItem="cvc-Ib-kUg" secondAttribute="trailing" id="KTj-Yi-npY"/>
+                                    <constraint firstItem="pIL-PZ-m1c" firstAttribute="width" secondItem="r8U-mu-P5n" secondAttribute="width" id="Ruc-oh-VpM"/>
+                                    <constraint firstItem="cvc-Ib-kUg" firstAttribute="top" secondItem="pIL-PZ-m1c" secondAttribute="top" id="dB1-e3-tko"/>
+                                    <constraint firstItem="pIL-PZ-m1c" firstAttribute="leading" secondItem="cvc-Ib-kUg" secondAttribute="leading" id="qdR-kB-0j6"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="cvc-Ib-kUg"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="r8U-mu-P5n"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bFI-0d-iLa" secondAttribute="bottom" id="8PA-tG-JUx"/>
+                            <constraint firstItem="bFI-0d-iLa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ctc-ab-n1d"/>
+                            <constraint firstItem="bFI-0d-iLa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iCf-fT-IDG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bFI-0d-iLa" secondAttribute="trailing" id="y8g-BV-ogD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FUs-eQ-LuC"/>
+                    <size key="freeformSize" width="393" height="1000"/>
+                    <connections>
+                        <outlet property="buttonContainerStackView" destination="pIL-PZ-m1c" id="jcV-JA-ZqN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="945.80152671755718" y="-2.1126760563380285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3LX-yv-6nn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XCT-Uz-9jJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FOA-QZ-aHD">
+                        <rect key="frame" x="0.0" y="118" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2mn-5F-FGS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kIH-mX-fDm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="19.083969465648853" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

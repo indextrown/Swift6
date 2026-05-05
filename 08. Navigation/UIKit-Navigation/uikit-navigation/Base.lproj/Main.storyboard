@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4ON-fE-9FI">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--첫번째-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="FirstViewController" title="첫번째" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="FirstViewController" customModule="uikit_navigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="WGP-RP-oaB">
+                                <rect key="frame" x="20" y="113" width="353" height="716"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ou-GC-Zn0">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="94.333333333333329"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="스토리보드로 버튼요소에 show를 직접 연결이동(코드 필요x)"/>
+                                        <connections>
+                                            <segue destination="lJ0-P7-Aa1" kind="show" id="e7S-vr-ObS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fA-XB-wgv">
+                                        <rect key="frame" x="0.0" y="124.33333333333334" width="353" height="94.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="스토리보드로 세그웨이에 identifier 설정하여 두번째 화면으로이동"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHh-bK-Sy2">
+                                        <rect key="frame" x="0.0" y="248.66666666666671" width="353" height="94.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="스토리보드로 세그웨이에 identifier 설정하여 Detail화면으로 이동"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpV-wu-YgH">
+                                        <rect key="frame" x="0.0" y="373" width="353" height="94.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="하나의 스토리보드로 viewController를 많이 추가하지 않고 새로운 Storyboard와 Storyboard reference를 이용하여 파일을 나누는 방식"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Pl-Jr-JQ3">
+                                        <rect key="frame" x="0.0" y="497.33333333333331" width="353" height="94.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="프로그램 푸시"/>
+                                        <connections>
+                                            <action selector="onPushBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fGc-v9-1rt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuz-VC-DfG">
+                                        <rect key="frame" x="0.0" y="621.66666666666663" width="353" height="94.333333333333371"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="프로그램 푸시"/>
+                                        <connections>
+                                            <action selector="codeNextBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NCp-xd-8hE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WGP-RP-oaB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="HXR-6h-nED"/>
+                            <constraint firstItem="WGP-RP-oaB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="KxI-W5-Kqd"/>
+                            <constraint firstItem="WGP-RP-oaB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eHO-Uu-AGT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="첫번째" id="Zif-1n-aG4"/>
+                    <connections>
+                        <outlet property="navToDetailVCBtn" destination="SHh-bK-Sy2" id="7m8-tJ-lB5"/>
+                        <outlet property="navToDetailVCBtn2" destination="hpV-wu-YgH" id="jkM-EC-R8K"/>
+                        <outlet property="navToSecondVCBtn" destination="3fA-XB-wgv" id="9PJ-kG-44r"/>
+                        <segue destination="xfT-FM-F1B" kind="show" identifier="navToDetailVC" id="b0f-eB-04q"/>
+                        <segue destination="lJ0-P7-Aa1" kind="show" identifier="navToSecondVC" id="0Fc-eM-nvk"/>
+                        <segue destination="rVC-Vx-ywW" kind="show" identifier="navToDetailVC2" id="x07-vg-2k1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="883" y="4"/>
+        </scene>
+        <!--두번째-->
+        <scene sceneID="Mg4-CL-8vP">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lJ0-P7-Aa1" customClass="SecondViewController" customModule="uikit_navigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="idE-O7-DZ9">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="qsM-WZ-oe5">
+                                <rect key="frame" x="20" y="409" width="353" height="259.66666666666674"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGe-ow-8ud">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button2"/>
+                                        <connections>
+                                            <segue destination="Wvi-Fy-lgt" kind="show" id="OkN-bP-bTl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jqw-3H-jKT">
+                                        <rect key="frame" x="0.0" y="56.333333333333314" width="353" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="뒤로 돌아가기"/>
+                                        <connections>
+                                            <action selector="goBackToFirstVC:" destination="lJ0-P7-Aa1" eventType="touchUpInside" id="lvM-xG-ewP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3F2-1t-TY0">
+                                        <rect key="frame" x="0.0" y="112.66666666666661" width="353" height="34.333333333333329"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="뒤로 돌아가기2 - noCode - exit드래그"/>
+                                        <connections>
+                                            <segue destination="DmB-NC-gwV" kind="unwind" unwindAction="goBackToFirstVCWithUnwindSegue:" id="14O-zX-6EQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4b-5x-eG8">
+                                        <rect key="frame" x="0.0" y="169" width="353" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="뒤로 돌아가기3 - performSegue"/>
+                                        <connections>
+                                            <action selector="goBackToFirstVC3:" destination="lJ0-P7-Aa1" eventType="touchUpInside" id="DDU-ev-9nb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXI-gH-WtD">
+                                        <rect key="frame" x="0.0" y="225.33333333333337" width="353" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="프로그램 푸시"/>
+                                        <connections>
+                                            <action selector="onPushBtnClicked:" destination="lJ0-P7-Aa1" eventType="touchUpInside" id="Fce-HI-iLj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iWk-v9-SQs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qsM-WZ-oe5" firstAttribute="centerX" secondItem="iWk-v9-SQs" secondAttribute="centerX" id="NDj-Xs-r8j"/>
+                            <constraint firstItem="qsM-WZ-oe5" firstAttribute="top" secondItem="iWk-v9-SQs" secondAttribute="top" constant="306" id="S0T-Ug-8w0"/>
+                            <constraint firstItem="qsM-WZ-oe5" firstAttribute="leading" secondItem="iWk-v9-SQs" secondAttribute="leading" constant="20" id="rX2-Ke-o4h"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="두번째" id="5zH-Mc-tm6"/>
+                    <connections>
+                        <segue destination="DmB-NC-gwV" kind="unwind" identifier="goBackToFirstVC" unwindAction="goBackToFirstVCWithUnwindSegue:" id="Cod-cC-Gfw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ioS-5e-nm5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="DmB-NC-gwV" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1665" y="4"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Pm5-Fv-OeJ">
+            <objects>
+                <viewController id="xfT-FM-F1B" customClass="DetailViewController" customModule="uikit_navigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rC7-n7-XW5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pc-UP-BJZ">
+                                <rect key="frame" x="30" y="403" width="333" height="71.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NIn-YG-Q4g"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2pc-UP-BJZ" firstAttribute="top" secondItem="NIn-YG-Q4g" secondAttribute="top" constant="300" id="CkL-4o-Qxf"/>
+                            <constraint firstItem="2pc-UP-BJZ" firstAttribute="centerX" secondItem="NIn-YG-Q4g" secondAttribute="centerX" id="XaZ-u2-eh6"/>
+                            <constraint firstItem="2pc-UP-BJZ" firstAttribute="leading" secondItem="NIn-YG-Q4g" secondAttribute="leading" constant="30" id="fab-re-Jmg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cMr-ct-XRW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uAC-Bw-NOh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1665" y="865"/>
+        </scene>
+        <!--세번째-->
+        <scene sceneID="IvQ-ql-xjq">
+            <objects>
+                <viewController storyboardIdentifier="ThirdViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Wvi-Fy-lgt" customClass="ThirdViewController" customModule="uikit_navigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YGy-tf-aa1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="c7a-qE-8Ah"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="세번째" id="eB4-1D-n2e"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PJq-dM-zFL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2457" y="4"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Apl-0t-b5R">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4ON-fE-9FI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZLu-pS-huE">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="BIF-3r-jAi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dAH-SA-dJ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="97" y="4"/>
+        </scene>
+        <!--DetailVC2-->
+        <scene sceneID="vu0-E6-Tud">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DetailViewController2" referencedIdentifier="DetailVC2" id="rVC-Vx-ywW" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="KgK-1g-ue6"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6MH-5k-ewY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="353" y="574"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="e7S-vr-ObS"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

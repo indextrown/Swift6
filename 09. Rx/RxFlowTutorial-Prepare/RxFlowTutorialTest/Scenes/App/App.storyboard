@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SplashVC-->
+        <scene sceneID="iJq-n2-Teb">
+            <objects>
+                <viewController storyboardIdentifier="SplashVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="a7D-8b-jPn" customClass="SplashVC" customModule="RxFlowTutorialTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LGw-li-eer">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ii8-9u-p3e">
+                                <rect key="frame" x="20" y="267.66666666666669" width="353" height="367.00000000000006"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스플래시 화면" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URL-gZ-8cE">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="T4b-gg-DnX">
+                                        <rect key="frame" x="0.0" y="80" width="353" height="32"/>
+                                        <segments>
+                                            <segment title="홈"/>
+                                            <segment title="즐겨찾기"/>
+                                            <segment title="프로필"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiQ-ya-oAg">
+                                        <rect key="frame" x="0.0" y="131" width="353" height="44"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="메인 탭 화면으로 이동">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="navigateMainTab:" destination="a7D-8b-jPn" eventType="touchUpInside" id="d9c-TM-gog"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gGf-Rc-X6d">
+                                        <rect key="frame" x="0.0" y="195" width="353" height="44"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="이미 로그인되어있는 사용자">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="alreadyLoggedInStep:" destination="a7D-8b-jPn" eventType="touchUpInside" id="woZ-5n-4UA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ap7-f1-GJq">
+                                        <rect key="frame" x="0.0" y="258.99999999999994" width="353" height="44"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="로그인이 필요한 사용자">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="loginIsRequiredStep:" destination="a7D-8b-jPn" eventType="touchUpInside" id="hXp-mO-dnV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1m-tz-ad5">
+                                        <rect key="frame" x="0.0" y="322.99999999999994" width="353" height="44"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="차단된 사용자">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="25"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="handleBannedUser:" destination="a7D-8b-jPn" eventType="touchUpInside" id="dh1-lA-zH8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uob-jL-9wD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ii8-9u-p3e" firstAttribute="leading" secondItem="uob-jL-9wD" secondAttribute="leading" constant="20" id="0f1-cn-cFI"/>
+                            <constraint firstItem="ii8-9u-p3e" firstAttribute="centerX" secondItem="uob-jL-9wD" secondAttribute="centerX" id="iTf-KD-90H"/>
+                            <constraint firstItem="ii8-9u-p3e" firstAttribute="centerY" secondItem="uob-jL-9wD" secondAttribute="centerY" id="imf-fD-pjT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="focusedSegmentControl" destination="T4b-gg-DnX" id="7yX-7r-ds7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3o3-8v-dOw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="936.64122137404581" y="-2.1126760563380285"/>
+        </scene>
+        <!--Banned UserVC-->
+        <scene sceneID="EK1-ZM-Hf2">
+            <objects>
+                <viewController storyboardIdentifier="BannedUserVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kpr-yP-w33" customClass="BannedUserVC" customModule="RxFlowTutorialTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6w3-sd-eCX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="raC-fH-xFK">
+                                <rect key="frame" x="56" y="391.33333333333331" width="281" height="119.66666666666669"/>
+                                <string key="text">차단된 사용자 
+화면</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Hub-45-IWq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="raC-fH-xFK" firstAttribute="centerY" secondItem="Hub-45-IWq" secondAttribute="centerY" id="K1X-2g-ZVp"/>
+                            <constraint firstItem="raC-fH-xFK" firstAttribute="centerX" secondItem="Hub-45-IWq" secondAttribute="centerX" id="ad3-4S-fer"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9PT-ij-AYE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1711" y="-2"/>
+        </scene>
+        <!--Welcome BackVC-->
+        <scene sceneID="eD0-8d-4pN">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeBackVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RyL-Np-Hkz" customClass="WelcomeBackVC" customModule="RxFlowTutorialTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E9E-gT-Mwn">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzk-3O-Cbi">
+                                <rect key="frame" x="126.33333333333333" y="391.33333333333331" width="140.66666666666669" height="119.66666666666669"/>
+                                <string key="text">웰컴백 
+화면</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CY7-ut-AOh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wzk-3O-Cbi" firstAttribute="centerX" secondItem="CY7-ut-AOh" secondAttribute="centerX" id="VHb-e7-l3Z"/>
+                            <constraint firstItem="wzk-3O-Cbi" firstAttribute="centerY" secondItem="CY7-ut-AOh" secondAttribute="centerY" id="lca-5x-jdI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B0y-fE-6kP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2447" y="-2"/>
+        </scene>
+        <!--Event InfoVC-->
+        <scene sceneID="LYC-NX-03u">
+            <objects>
+                <viewController storyboardIdentifier="EventInfoVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ih0-1B-PRS" customClass="EventInfoVC" customModule="RxFlowTutorialTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tfw-tC-Ccd">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDb-MG-IIr">
+                                <rect key="frame" x="77.666666666666671" y="391.33333333333331" width="237.66666666666663" height="119.66666666666669"/>
+                                <string key="text">이벤트 안내 
+화면</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="thQ-IU-GuB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DDb-MG-IIr" firstAttribute="centerY" secondItem="thQ-IU-GuB" secondAttribute="centerY" id="984-I1-2dq"/>
+                            <constraint firstItem="DDb-MG-IIr" firstAttribute="centerX" secondItem="thQ-IU-GuB" secondAttribute="centerX" id="w1u-pX-NgH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9VJ-Hv-nd8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3254" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

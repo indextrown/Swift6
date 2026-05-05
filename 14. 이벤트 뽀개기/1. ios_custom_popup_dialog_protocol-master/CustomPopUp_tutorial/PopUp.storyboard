@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Pop Up View Controller-->
+        <scene sceneID="5PI-l7-yYk">
+            <objects>
+                <viewController storyboardIdentifier="AlertPopUpVC" id="ex1-1w-XVi" customClass="CustomPopUpViewController" customModule="CustomPopUp_tutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6bh-Ba-EVk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbN-JT-JCw" userLabel="bgBtn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onBgBtnClicked:" destination="ex1-1w-XVi" eventType="touchUpInside" id="gM3-qh-0bX"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qjE-mF-h4u" userLabel="contentView">
+                                <rect key="frame" x="82" y="248" width="250" height="400"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my_image" translatesAutoresizingMaskIntoConstraints="NO" id="bAi-MA-Yd7">
+                                        <rect key="frame" x="65" y="20" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="5bu-84-gec"/>
+                                            <constraint firstAttribute="height" constant="120" id="loJ-ZY-An5"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="안녕하세요! 쩡대리 입니다!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ews-cM-jyi">
+                                        <rect key="frame" x="35" y="148" width="180.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="구독 좋아요 부탁드립니다!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSV-hT-klg">
+                                        <rect key="frame" x="37.5" y="176.5" width="175.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uBs-bB-bDZ">
+                                        <rect key="frame" x="65" y="262" width="120" height="110"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pL-3b-6si">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="30"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="BzH-B3-79X"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="쩡대리 블로그">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onBlogBtnClicked:" destination="ex1-1w-XVi" eventType="touchUpInside" id="c0p-XA-OKN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6D-a5-dS5">
+                                                <rect key="frame" x="0.0" y="40" width="120" height="30"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="Se7-O0-Gcr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="오픈깨톡방 가기">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onOpenChatBtnClicked:" destination="ex1-1w-XVi" eventType="touchUpInside" id="8sp-WJ-lz0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTY-zv-osQ">
+                                                <rect key="frame" x="0.0" y="80" width="120" height="30"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="eis-W5-ZVV"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="구독하러 가기!">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="onSubscribeBtnClicked:" destination="ex1-1w-XVi" eventType="touchUpInside" id="oao-5j-vQT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="ews-cM-jyi" firstAttribute="centerX" secondItem="qjE-mF-h4u" secondAttribute="centerX" id="58o-1t-AXb"/>
+                                    <constraint firstItem="bAi-MA-Yd7" firstAttribute="centerX" secondItem="qjE-mF-h4u" secondAttribute="centerX" id="BUs-an-5xX"/>
+                                    <constraint firstAttribute="width" constant="250" id="P05-lr-ZEi"/>
+                                    <constraint firstItem="ews-cM-jyi" firstAttribute="top" secondItem="bAi-MA-Yd7" secondAttribute="bottom" constant="8" id="TXu-1x-jeL"/>
+                                    <constraint firstAttribute="height" constant="400" id="UyK-gn-aXA"/>
+                                    <constraint firstItem="uBs-bB-bDZ" firstAttribute="centerX" secondItem="qjE-mF-h4u" secondAttribute="centerX" id="VtZ-M2-vmR"/>
+                                    <constraint firstAttribute="bottom" secondItem="uBs-bB-bDZ" secondAttribute="bottom" constant="28" id="Xf8-Uc-6It"/>
+                                    <constraint firstItem="WSV-hT-klg" firstAttribute="top" secondItem="ews-cM-jyi" secondAttribute="bottom" constant="8" id="fdy-pk-EKK"/>
+                                    <constraint firstItem="WSV-hT-klg" firstAttribute="centerX" secondItem="qjE-mF-h4u" secondAttribute="centerX" id="hnd-JF-FYM"/>
+                                    <constraint firstItem="bAi-MA-Yd7" firstAttribute="top" secondItem="qjE-mF-h4u" secondAttribute="top" constant="20" id="q7B-M9-UUa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.63875440140845074" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="cbN-JT-JCw" firstAttribute="bottom" secondItem="3FS-c2-VXJ" secondAttribute="bottom" id="8Rl-pc-sOW"/>
+                            <constraint firstItem="cbN-JT-JCw" firstAttribute="trailing" secondItem="3FS-c2-VXJ" secondAttribute="trailing" id="D7C-NS-0Vi"/>
+                            <constraint firstItem="qjE-mF-h4u" firstAttribute="centerX" secondItem="6bh-Ba-EVk" secondAttribute="centerX" id="G07-ES-cup"/>
+                            <constraint firstItem="qjE-mF-h4u" firstAttribute="centerY" secondItem="6bh-Ba-EVk" secondAttribute="centerY" id="JNk-mf-pjP"/>
+                            <constraint firstItem="cbN-JT-JCw" firstAttribute="leading" secondItem="3FS-c2-VXJ" secondAttribute="leading" id="sac-GA-KIF"/>
+                            <constraint firstItem="cbN-JT-JCw" firstAttribute="top" secondItem="3FS-c2-VXJ" secondAttribute="top" id="xrq-FC-sRx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3FS-c2-VXJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="bgBtn" destination="cbN-JT-JCw" id="QVg-Mi-n0I"/>
+                        <outlet property="blogBtn" destination="7pL-3b-6si" id="gaV-IG-FiW"/>
+                        <outlet property="contentView" destination="qjE-mF-h4u" id="Fke-lj-vdv"/>
+                        <outlet property="openChatBtn" destination="Q6D-a5-dS5" id="P1Y-AI-fDQ"/>
+                        <outlet property="subscribeBtn" destination="PTY-zv-osQ" id="wtp-qi-aCS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7rr-BN-dHx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118.84057971014494" y="160.71428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="my_image" width="275" height="275"/>
+    </resources>
+</document>

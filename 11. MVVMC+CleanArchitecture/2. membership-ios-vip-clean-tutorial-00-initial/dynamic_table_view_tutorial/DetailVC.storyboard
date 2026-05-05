@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DetailVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="DetailVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="DetailVC" customModule="dynamic_table_view_tutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="1300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BeJ-xc-waa">
+                                <rect key="frame" x="0.0" y="59" width="393" height="1241"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jeongDaeRi" translatesAutoresizingMaskIntoConstraints="NO" id="Wvh-An-Tfb">
+                                        <rect key="frame" x="0.0" y="200" width="393" height="0.0"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="qo7-Mb-il8">
+                                        <rect key="frame" x="0.0" y="120" width="393" height="1882"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QEf-vf-aEa">
+                                                <rect key="frame" x="143" y="8" width="107" height="40.666666666666664"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="개발하는 정대리" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upU-UE-Zwg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="107" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@유튜버" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6UG-BB-c35">
+                                                        <rect key="frame" x="0.0" y="20.333333333333343" width="107" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                        <color key="textColor" systemColor="systemGrayColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="들어온 데이터 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0nY-za-2ut">
+                                                <rect key="frame" x="143.66666666666666" y="68.666666666666657" width="105.66666666666666" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1n-NY-VaE">
+                                                <rect key="frame" x="8" y="109" width="377" height="1765"/>
+                                                <string key="text">예가 위하여 방황하여도, 불러 봄바람이다. 이상은 원대하고, 작고 하였으며, 그들은 방지하는 노래하며 귀는 약동하다. 두손을 노래하며 갑 무엇이 고동을 원질이 사막이다. 두손을 무한한 풍부하게 있는 우리의 것이다. 소금이라 든 같지 구하지 찾아다녀도, 밝은 방황하여도, 것은 듣는다. 봄바람을 내는 가치를 철환하였는가? 싸인 할지니, 가슴이 쓸쓸하랴? 가치를 청춘이 인생을 속에서 청춘의 주는 눈이 있다. 구하지 우리는 따뜻한 날카로우나 만천하의 할지니, 하는 부패뿐이다.
+
+하는 커다란 못할 이상 위하여서. 얼마나 우리 얼마나 피가 같이, 때까지 스며들어 심장은 위하여 그리하였는가? 긴지라 내는 예수는 인생을 못할 아름다우냐? 풀밭에 대고, 그들의 하여도 전인 없는 반짝이는 힘있다. 듣기만 커다란 위하여, 같은 우리 품으며, 인도하겠다는 노년에게서 피다. 그러므로 부패를 들어 구하기 같은 웅대한 같지 힘있다. 실현에 방황하여도, 우는 아니더면, 청춘의 크고 위하여 말이다. 스며들어 청춘 원대하고, 곳이 인생에 긴지라 철환하였는가? 꽃이 열락의 끓는 얼음이 인생을 물방아 더운지라 부패뿐이다. 속에서 가슴에 그들을 것은 얼마나 무엇을 가는 이상, 무엇을 아름다우냐?
+
+피고, 불어 있는 운다. 심장의 피어나는 눈에 피고, 있을 속에서 청춘의 용기가 끓는다. 붙잡아 주는 사랑의 불어 가는 행복스럽고 쓸쓸하랴? 현저하게 수 못하다 만천하의 타오르고 거선의 쓸쓸한 것은 이것이다. 꽃이 품고 대한 말이다. 인생에 사랑의 가슴에 작고 그들의 것은 있으랴? 청춘의 용기가 것은 피고, 위하여서 그들의 되는 있으며, 사랑의 이것이다. 트고, 안고, 뜨고, 그들은 곳으로 길지 밥을 생생하며, 뿐이다. 이상의 놀이 얼마나 하는 이것이다. 길을 발휘하기 새 놀이 인간의 운다. 찬미를 청춘에서만 안고, 얼음과 유소년에게서 구할 봄바람이다.
+
+청춘의 영원히 두기 말이다. 청춘이 무엇을 튼튼하며, 청춘의 것이다. 설레는 동산에는 이상은 인류의 과실이 살 동력은 사막이다. 피에 바이며, 열매를 못할 만물은 있는 얼음과 지혜는 가지에 부패뿐이다. 눈에 끝까지 끓는 없으면, 아니더면, 끓는 구할 아름다우냐? 그와 인생을 가장 새 원질이 희망의 것이다. 거친 인간에 가지에 오직 피고, 불어 우리의 청춘의 길지 것이다. 있는 있음으로써 충분히 무한한 이것이다. 이상의 생명을 이것을 옷을 그들을 밥을 아름다우냐? 뜨거운지라, 가장 이상을 넣는 칼이다.
+
+인생에 남는 수 위하여 내는 보배를 인류의 오아이스도 만물은 사막이다. 불어 바이며, 가는 평화스러운 길지 뿐이다. 꾸며 대한 살 있는 생의 주는 것이다. 너의 풀이 얼마나 이상의 같이, 쓸쓸한 품고 위하여서. 현저하게 뭇 찬미를 것이다. 트고, 설산에서 가치를 기관과 영원히 구하지 풍부하게 원질이 힘있다. 얼마나 방황하여도, 간에 바이며, 불러 못하다 이것이다. 두기 청춘의 동력은 천지는 못하다 말이다. 있을 있는 할지라도 같이, 용기가 사막이다.
+
+가지에 풀밭에 청춘 것이다. 따뜻한 끝까지 인간이 힘차게 그것을 그리하였는가? 청춘이 커다란 있는 굳세게 가치를 희망의 만천하의 품고 것이다. 커다란 끓는 이상이 때까지 그들은 낙원을 위하여, 그러므로 듣는다. 바이며, 풀밭에 그들의 위하여서. 영원히 곳이 끓는 고동을 천지는 행복스럽고 피어나는 하였으며, 위하여서. 뼈 우리 풍부하게 이상을 내는 남는 놀이 불러 것이다. 풀이 그들은 하는 그러므로 노년에게서 별과 것이다. 인생에 그러므로 귀는 노년에게서 인생을 얼마나 피고, 같이, 보라. 밥을 위하여, 끓는 그들에게 부패뿐이다.
+
+이는 커다란 없으면, 것이다. 것은 스며들어 고동을 아니한 것은 열락의 일월과 목숨을 이것이다. 그러므로 지혜는 있음으로써 청춘은 있는 남는 쓸쓸하랴? 구할 용감하고 소담스러운 우는 아니한 창공에 황금시대다. 피어나는 몸이 산야에 운다. 눈에 군영과 황금시대의 같은 말이다. 새가 기쁘며, 피어나기 무엇이 못하다 같이, 청춘이 것이다. 간에 뜨거운지라, 위하여 피다. 용기가 행복스럽고 동력은 안고, 바이며, 것은 이상 노년에게서 밥을 것이다. 끓는 얼마나 구하기 찾아다녀도, 쓸쓸한 같이, 있으랴? 거선의 사람은 얼마나 끓는다.
+
+살 생의 얼음에 약동하다. 것은 얼마나 옷을 찬미를 있는 것은 가는 노년에게서 들어 사막이다. 부패를 피어나기 인류의 인간은 싹이 대한 뿐이다. 무엇을 그들은 발휘하기 눈에 열락의 꽃 천하를 피는 끓는다. 풀이 청춘의 소금이라 노년에게서 사는가 이상이 유소년에게서 이것이다. 황금시대를 따뜻한 이상을 피고 청춘의 것이다. 없으면 뛰노는 같이, 있을 타오르고 보라. 그들의 가치를 되는 아름답고 이것은 운다. 그들의 이상 그것을 이상의 주는 할지니, 동력은 인간이 때문이다. 우리 이상은 끓는 바로 같이, 얼마나 속잎나고, 끓는 부패뿐이다.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qo7-Mb-il8" firstAttribute="leading" secondItem="OVm-uG-AZv" secondAttribute="leading" id="4cd-lv-Icu"/>
+                                    <constraint firstItem="Wvh-An-Tfb" firstAttribute="centerX" secondItem="BeJ-xc-waa" secondAttribute="centerX" id="EAK-NI-hks"/>
+                                    <constraint firstItem="qo7-Mb-il8" firstAttribute="bottom" secondItem="OVm-uG-AZv" secondAttribute="bottom" id="LXb-7W-N4F"/>
+                                    <constraint firstItem="qo7-Mb-il8" firstAttribute="width" secondItem="kY4-YM-yEQ" secondAttribute="width" id="g3P-TL-m3x"/>
+                                    <constraint firstItem="qo7-Mb-il8" firstAttribute="top" secondItem="Wvh-An-Tfb" secondAttribute="bottom" id="qMB-lD-BPP"/>
+                                    <constraint firstItem="Wvh-An-Tfb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BeJ-xc-waa" secondAttribute="leading" id="t9N-06-gCk"/>
+                                    <constraint firstItem="qo7-Mb-il8" firstAttribute="top" secondItem="OVm-uG-AZv" secondAttribute="top" constant="120" id="vUf-I7-udt"/>
+                                    <constraint firstItem="qo7-Mb-il8" firstAttribute="trailing" secondItem="OVm-uG-AZv" secondAttribute="trailing" id="w4W-zF-FDZ"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="OVm-uG-AZv"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="kY4-YM-yEQ"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BeJ-xc-waa" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="1l8-8q-aif"/>
+                            <constraint firstAttribute="bottom" secondItem="BeJ-xc-waa" secondAttribute="bottom" id="CPn-kc-G4t"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="leading" secondItem="BeJ-xc-waa" secondAttribute="leading" id="D5P-dl-BWE"/>
+                            <constraint firstItem="BeJ-xc-waa" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="TGP-uf-Jfl"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="top" secondItem="Wvh-An-Tfb" secondAttribute="top" id="oif-cr-mAY"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="393" height="1300"/>
+                    <connections>
+                        <outlet property="injectedDataLabel" destination="0nY-za-2ut" id="4kG-9U-5Kn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.5267175572519" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="jeongDaeRi" width="1838" height="1701"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

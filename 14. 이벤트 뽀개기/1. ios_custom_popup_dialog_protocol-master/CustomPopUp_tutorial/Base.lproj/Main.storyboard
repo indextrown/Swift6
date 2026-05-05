@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomPopUp_tutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gLO-9c-xBt">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wuS-oO-htx">
+                                <rect key="frame" x="157" y="761" width="100" height="36"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.83137254900000002" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4kJ-Ox-yf7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="팝업띄우기"/>
+                                <connections>
+                                    <action selector="onCreatePopUpBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WMP-hl-oT6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="gLO-9c-xBt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="40r-mP-FHF"/>
+                            <constraint firstItem="gLO-9c-xBt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9fE-5O-jmD"/>
+                            <constraint firstItem="wuS-oO-htx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JcM-0Y-3sm"/>
+                            <constraint firstItem="gLO-9c-xBt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="k6C-pz-zFk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wuS-oO-htx" secondAttribute="bottom" constant="65" id="tYh-ug-wbI"/>
+                            <constraint firstItem="gLO-9c-xBt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="udX-3d-rR4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="createPopUpBtn" destination="wuS-oO-htx" id="Odh-4z-mq3"/>
+                        <outlet property="myWebView" destination="gLO-9c-xBt" id="4Cz-cs-ueC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Nib-->
+        <scene sceneID="h47-em-C9x">
+            <objects>
+                <viewController storyboardIdentifier="NibListViewController" title="Nib" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5D6-i0-CMd" customClass="NibListViewController" customModule="UITableViewTutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q2Q-Gm-bVA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="iEX-Fs-Kas" userLabel="My Table View">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UiE-HA-qiy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UiE-HA-qiy" firstAttribute="trailing" secondItem="iEX-Fs-Kas" secondAttribute="trailing" id="AIY-8r-yyH"/>
+                            <constraint firstItem="UiE-HA-qiy" firstAttribute="bottom" secondItem="iEX-Fs-Kas" secondAttribute="bottom" id="qst-Eo-2yT"/>
+                            <constraint firstItem="iEX-Fs-Kas" firstAttribute="top" secondItem="UiE-HA-qiy" secondAttribute="top" id="uWw-U3-W2J"/>
+                            <constraint firstItem="iEX-Fs-Kas" firstAttribute="leading" secondItem="UiE-HA-qiy" secondAttribute="leading" id="xdk-HT-ChG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Nib" id="29P-6s-xvF"/>
+                    <connections>
+                        <outlet property="myTableView" destination="iEX-Fs-Kas" id="evY-Fg-Nnh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k8d-jr-PlG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1247" y="346"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NibCell" rowHeight="66" id="KGk-i7-Jjw" customClass="NibCell" customModule="UITableViewTutorial" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="404" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="404" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKc-sn-LnB" userLabel="TitleLabel">
+                        <rect key="frame" x="0.0" y="10" width="404" height="17"/>
+                        <mutableString key="text">타이틀: 애리차는 살엣퇑게 앙쵢진 단더시게 다오타며어서 재엔치에 시락호도믐을. 걱러쳐슨제 커밀 펑알오이 아휴쟁어서 레프어 아짬으어서 굴쇼애라가 블반거나 포멱뎌외의 악스틸둔을 외이욱첸는다. 채아 그잘헨컬아지만 빈누야에 즈재탄다 망제게 길닐은가뇐힝탄구다 조모리가딴이고 잔괸앙인어라. 젤이웅옸발아도 응나와 사이시지는 나야냎헜은 킸팜으로. 밤브어 춧개를 히아 으아로삾겁는다 갸서루구버고 냐올스자메힐 당악굤손가, 칗애락미를. 야싱몬릍 버주내옹수의, 븜어애다 시크 이호줐힌고 달가가 인여조. 칸진조아 버세잰 네캋으에 냐럭암함드는 심현 닥가카삭. 딘이뫈합아 청브사넹에 람사로 솨던 잔네도는 아올후요로작아야 나이도 넨시따고 그흦어자므어 트코석단넬으로. 송둬 로바군씌무달에 나논의 녀아이능잘이고, 시핸귕처럼 저흐인거가 단공차다.  
+</mutableString>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KF6-SO-OFL" userLabel="BodyLabel">
+                        <rect key="frame" x="0.0" y="37" width="404" height="29"/>
+                        <string key="text">애리차는 살엣퇑게 앙쵢진 단더시게 다오타며어서 재엔치에 시락호도믐을. 걱러쳐슨제 커밀 펑알오이 아휴쟁어서 레프어 아짬으어서 굴쇼애라가 블반거나 포멱뎌외의 악스틸둔을 외이욱첸는다. 채아 그잘헨컬아지만 빈누야에 즈재탄다 망제게 길닐은가뇐힝탄구다 조모리가딴이고 잔괸앙인어라. 젤이웅옸발아도 응나와 사이시지는 나야냎헜은 킸팜으로. 밤브어 춧개를 히아 으아로삾겁는다 갸서루구버고 냐올스자메힐 당악굤손가, 칗애락미를. 야싱몬릍 버주내옹수의, 븜어애다 시크 이호줐힌고 달가가 인여조. 칸진조아 버세잰 네캋으에 냐럭암함드는 심현 닥가카삭. 딘이뫈합아 청브사넹에 람사로 솨던 잔네도는 아올후요로작아야 나이도 넨시따고 그흦어자므어 트코석단넬으로. 송둬 로바군씌무달에 나논의 녀아이능잘이고, 시핸귕처럼 저흐인거가 단공차다.  
+</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="JKc-sn-LnB" secondAttribute="trailing" id="LNQ-Ih-evv"/>
+                    <constraint firstItem="JKc-sn-LnB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="TN5-rk-Pzh"/>
+                    <constraint firstAttribute="bottom" secondItem="KF6-SO-OFL" secondAttribute="bottom" id="UmC-Kj-xVY"/>
+                    <constraint firstItem="KF6-SO-OFL" firstAttribute="top" secondItem="JKc-sn-LnB" secondAttribute="bottom" constant="10" id="Uwe-5q-mYL"/>
+                    <constraint firstAttribute="trailing" secondItem="KF6-SO-OFL" secondAttribute="trailing" id="e6p-4q-cEH"/>
+                    <constraint firstItem="KF6-SO-OFL" firstAttribute="leading" secondItem="JKc-sn-LnB" secondAttribute="leading" id="kKz-JQ-8kB"/>
+                    <constraint firstItem="JKc-sn-LnB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="z4N-yH-tj4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bodyLabel" destination="KF6-SO-OFL" id="Hb1-kq-9B6"/>
+                <outlet property="titleLabel" destination="JKc-sn-LnB" id="kcJ-2v-0b8"/>
+            </connections>
+            <point key="canvasLocation" x="109.9236641221374" y="28.169014084507044"/>
+        </tableViewCell>
+    </objects>
+</document>

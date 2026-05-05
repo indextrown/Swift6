@@ -1,0 +1,50 @@
+{
+    "Users": {
+        "user1_id": {
+            "id": "user1_id"
+            "name": "name",
+            "profileURL": "profileURL",
+            "description": "description"
+        },
+        "user2_id": {
+            "id": "user2_id"
+            "name": "name",
+            "profileURL": "profileURL",
+            "description": "description"
+        },
+    },
+    "ChatRooms": {  // ChatRooms/uid
+        "user1_id": {
+            "user2_id": {
+                "chatRoom_id": "chatRoom_id",
+                "lastMessage": "message",
+                "otherUserName": "user2",
+                "otherUserId": "user2_id"
+            }
+        },
+        "user12_id": {
+            "user1_id": {
+                "chatRoom_id": "chatRoom_id",
+                "lastMessage": "message",
+                "otherUserName": "user1",
+                "otherUserId": "user1_id"
+            }
+        }
+    },
+    "Chats": {  
+        "chatRoom_id": {
+            "chat1_id": {
+                "message": "message",
+                "userID": "user1_id",
+                "photoURL": "photoURL",
+                "date": date,
+            },
+            "chat2_id": {
+                "message": "message",
+                "userID": "user2_id",
+                "photoURL": "photoURL",
+                "date": date,
+            },...
+        }
+    }
+}

@@ -1,0 +1,740 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF7CA00A2DA3D40600365E93 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DF7CA0092DA3D40600365E93 /* FirebaseAuth */; };
+		DF7CA00C2DA3D40600365E93 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = DF7CA00B2DA3D40600365E93 /* FirebaseAuthCombine-Community */; };
+		DF7CA00E2DA3D40600365E93 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = DF7CA00D2DA3D40600365E93 /* FirebaseDatabase */; };
+		DF7CA0102DA3D40600365E93 /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = DF7CA00F2DA3D40600365E93 /* FirebaseDynamicLinks */; };
+		DF7CA0122DA3D40600365E93 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DF7CA0112DA3D40600365E93 /* FirebaseFirestore */; };
+		DF7CA0142DA3D40600365E93 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = DF7CA0132DA3D40600365E93 /* FirebaseFirestoreCombine-Community */; };
+		DF7CA0162DA3D40600365E93 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = DF7CA0152DA3D40600365E93 /* FirebaseMessaging */; };
+		DF7CA0182DA3D40600365E93 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = DF7CA0172DA3D40600365E93 /* FirebaseStorage */; };
+		DF7CA01A2DA3D40600365E93 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = DF7CA0192DA3D40600365E93 /* FirebaseStorageCombine-Community */; };
+		DF7CA01D2DA3D42D00365E93 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = DF7CA01C2DA3D42D00365E93 /* GoogleSignIn */; };
+		DF7CA01F2DA3D42D00365E93 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DF7CA01E2DA3D42D00365E93 /* GoogleSignInSwift */; };
+		DF9AEEE32DA405C300466CC6 /* KakaoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = DF9AEEE22DA405C300466CC6 /* KakaoSDK */; };
+		DF9AEEE52DA405C300466CC6 /* KakaoSDKAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DF9AEEE42DA405C300466CC6 /* KakaoSDKAuth */; };
+		DF9AEEE72DA405C300466CC6 /* KakaoSDKCommon in Frameworks */ = {isa = PBXBuildFile; productRef = DF9AEEE62DA405C300466CC6 /* KakaoSDKCommon */; };
+		DF9AEEE92DA405C300466CC6 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = DF9AEEE82DA405C300466CC6 /* KakaoSDKUser */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF7A51542DA2B9AA00AEEC6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF7A51322DA2B9A900AEEC6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF7A51392DA2B9A900AEEC6E;
+			remoteInfo = "uikit-social-login";
+		};
+		DF7A515E2DA2B9AA00AEEC6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF7A51322DA2B9A900AEEC6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF7A51392DA2B9A900AEEC6E;
+			remoteInfo = "uikit-social-login";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF7A513A2DA2B9A900AEEC6E /* uikit-social-login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "uikit-social-login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF7A51532DA2B9AA00AEEC6E /* uikit-social-loginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "uikit-social-loginTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF7A515D2DA2B9AA00AEEC6E /* uikit-social-loginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "uikit-social-loginUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		DF7A51652DA2B9AA00AEEC6E /* Exceptions for "uikit-social-login" folder in "uikit-social-login" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = DF7A51392DA2B9A900AEEC6E /* uikit-social-login */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		DF7A513C2DA2B9A900AEEC6E /* uikit-social-login */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DF7A51652DA2B9AA00AEEC6E /* Exceptions for "uikit-social-login" folder in "uikit-social-login" target */,
+			);
+			path = "uikit-social-login";
+			sourceTree = "<group>";
+		};
+		DF7A51562DA2B9AA00AEEC6E /* uikit-social-loginTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "uikit-social-loginTests";
+			sourceTree = "<group>";
+		};
+		DF7A51602DA2B9AA00AEEC6E /* uikit-social-loginUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "uikit-social-loginUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF7A51372DA2B9A900AEEC6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF9AEEE52DA405C300466CC6 /* KakaoSDKAuth in Frameworks */,
+				DF7CA00E2DA3D40600365E93 /* FirebaseDatabase in Frameworks */,
+				DF7CA00A2DA3D40600365E93 /* FirebaseAuth in Frameworks */,
+				DF7CA0162DA3D40600365E93 /* FirebaseMessaging in Frameworks */,
+				DF7CA00C2DA3D40600365E93 /* FirebaseAuthCombine-Community in Frameworks */,
+				DF7CA0142DA3D40600365E93 /* FirebaseFirestoreCombine-Community in Frameworks */,
+				DF9AEEE32DA405C300466CC6 /* KakaoSDK in Frameworks */,
+				DF7CA01D2DA3D42D00365E93 /* GoogleSignIn in Frameworks */,
+				DF9AEEE92DA405C300466CC6 /* KakaoSDKUser in Frameworks */,
+				DF9AEEE72DA405C300466CC6 /* KakaoSDKCommon in Frameworks */,
+				DF7CA0182DA3D40600365E93 /* FirebaseStorage in Frameworks */,
+				DF7CA0122DA3D40600365E93 /* FirebaseFirestore in Frameworks */,
+				DF7CA01A2DA3D40600365E93 /* FirebaseStorageCombine-Community in Frameworks */,
+				DF7CA0102DA3D40600365E93 /* FirebaseDynamicLinks in Frameworks */,
+				DF7CA01F2DA3D42D00365E93 /* GoogleSignInSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF7A51502DA2B9AA00AEEC6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF7A515A2DA2B9AA00AEEC6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF7A51312DA2B9A900AEEC6E = {
+			isa = PBXGroup;
+			children = (
+				DF7A513C2DA2B9A900AEEC6E /* uikit-social-login */,
+				DF7A51562DA2B9AA00AEEC6E /* uikit-social-loginTests */,
+				DF7A51602DA2B9AA00AEEC6E /* uikit-social-loginUITests */,
+				DF7A513B2DA2B9A900AEEC6E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF7A513B2DA2B9A900AEEC6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF7A513A2DA2B9A900AEEC6E /* uikit-social-login.app */,
+				DF7A51532DA2B9AA00AEEC6E /* uikit-social-loginTests.xctest */,
+				DF7A515D2DA2B9AA00AEEC6E /* uikit-social-loginUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF7A51392DA2B9A900AEEC6E /* uikit-social-login */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF7A51662DA2B9AA00AEEC6E /* Build configuration list for PBXNativeTarget "uikit-social-login" */;
+			buildPhases = (
+				DF7A51362DA2B9A900AEEC6E /* Sources */,
+				DF7A51372DA2B9A900AEEC6E /* Frameworks */,
+				DF7A51382DA2B9A900AEEC6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				DF7A513C2DA2B9A900AEEC6E /* uikit-social-login */,
+			);
+			name = "uikit-social-login";
+			packageProductDependencies = (
+				DF7CA0092DA3D40600365E93 /* FirebaseAuth */,
+				DF7CA00B2DA3D40600365E93 /* FirebaseAuthCombine-Community */,
+				DF7CA00D2DA3D40600365E93 /* FirebaseDatabase */,
+				DF7CA00F2DA3D40600365E93 /* FirebaseDynamicLinks */,
+				DF7CA0112DA3D40600365E93 /* FirebaseFirestore */,
+				DF7CA0132DA3D40600365E93 /* FirebaseFirestoreCombine-Community */,
+				DF7CA0152DA3D40600365E93 /* FirebaseMessaging */,
+				DF7CA0172DA3D40600365E93 /* FirebaseStorage */,
+				DF7CA0192DA3D40600365E93 /* FirebaseStorageCombine-Community */,
+				DF7CA01C2DA3D42D00365E93 /* GoogleSignIn */,
+				DF7CA01E2DA3D42D00365E93 /* GoogleSignInSwift */,
+				DF9AEEE22DA405C300466CC6 /* KakaoSDK */,
+				DF9AEEE42DA405C300466CC6 /* KakaoSDKAuth */,
+				DF9AEEE62DA405C300466CC6 /* KakaoSDKCommon */,
+				DF9AEEE82DA405C300466CC6 /* KakaoSDKUser */,
+			);
+			productName = "uikit-social-login";
+			productReference = DF7A513A2DA2B9A900AEEC6E /* uikit-social-login.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF7A51522DA2B9AA00AEEC6E /* uikit-social-loginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF7A516B2DA2B9AA00AEEC6E /* Build configuration list for PBXNativeTarget "uikit-social-loginTests" */;
+			buildPhases = (
+				DF7A514F2DA2B9AA00AEEC6E /* Sources */,
+				DF7A51502DA2B9AA00AEEC6E /* Frameworks */,
+				DF7A51512DA2B9AA00AEEC6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF7A51552DA2B9AA00AEEC6E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				DF7A51562DA2B9AA00AEEC6E /* uikit-social-loginTests */,
+			);
+			name = "uikit-social-loginTests";
+			packageProductDependencies = (
+			);
+			productName = "uikit-social-loginTests";
+			productReference = DF7A51532DA2B9AA00AEEC6E /* uikit-social-loginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DF7A515C2DA2B9AA00AEEC6E /* uikit-social-loginUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF7A516E2DA2B9AA00AEEC6E /* Build configuration list for PBXNativeTarget "uikit-social-loginUITests" */;
+			buildPhases = (
+				DF7A51592DA2B9AA00AEEC6E /* Sources */,
+				DF7A515A2DA2B9AA00AEEC6E /* Frameworks */,
+				DF7A515B2DA2B9AA00AEEC6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF7A515F2DA2B9AA00AEEC6E /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				DF7A51602DA2B9AA00AEEC6E /* uikit-social-loginUITests */,
+			);
+			name = "uikit-social-loginUITests";
+			packageProductDependencies = (
+			);
+			productName = "uikit-social-loginUITests";
+			productReference = DF7A515D2DA2B9AA00AEEC6E /* uikit-social-loginUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF7A51322DA2B9A900AEEC6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					DF7A51392DA2B9A900AEEC6E = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					DF7A51522DA2B9AA00AEEC6E = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = DF7A51392DA2B9A900AEEC6E;
+					};
+					DF7A515C2DA2B9AA00AEEC6E = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = DF7A51392DA2B9A900AEEC6E;
+					};
+				};
+			};
+			buildConfigurationList = DF7A51352DA2B9A900AEEC6E /* Build configuration list for PBXProject "uikit-social-login" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF7A51312DA2B9A900AEEC6E;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DF7CA0082DA3D40600365E93 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				DF7CA01B2DA3D42D00365E93 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				DF9AEEE12DA405C300466CC6 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = DF7A513B2DA2B9A900AEEC6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF7A51392DA2B9A900AEEC6E /* uikit-social-login */,
+				DF7A51522DA2B9AA00AEEC6E /* uikit-social-loginTests */,
+				DF7A515C2DA2B9AA00AEEC6E /* uikit-social-loginUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF7A51382DA2B9A900AEEC6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF7A51512DA2B9AA00AEEC6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF7A515B2DA2B9AA00AEEC6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF7A51362DA2B9A900AEEC6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF7A514F2DA2B9AA00AEEC6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF7A51592DA2B9AA00AEEC6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF7A51552DA2B9AA00AEEC6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF7A51392DA2B9A900AEEC6E /* uikit-social-login */;
+			targetProxy = DF7A51542DA2B9AA00AEEC6E /* PBXContainerItemProxy */;
+		};
+		DF7A515F2DA2B9AA00AEEC6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF7A51392DA2B9A900AEEC6E /* uikit-social-login */;
+			targetProxy = DF7A515E2DA2B9AA00AEEC6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DF7A51672DA2B9AA00AEEC6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "uikit-social-login/uikit-social-login.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LGX4B4WC66;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "uikit-social-login/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.indextrown.uikit-social-login";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF7A51682DA2B9AA00AEEC6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "uikit-social-login/uikit-social-login.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LGX4B4WC66;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "uikit-social-login/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.indextrown.uikit-social-login";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DF7A51692DA2B9AA00AEEC6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = DF7A513C2DA2B9A900AEEC6E /* uikit-social-login */;
+			baseConfigurationReferenceRelativePath = Config.xcconfig;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DF7A516A2DA2B9AA00AEEC6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = DF7A513C2DA2B9A900AEEC6E /* uikit-social-login */;
+			baseConfigurationReferenceRelativePath = Config.xcconfig;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF7A516C2DA2B9AA00AEEC6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LGX4B4WC66;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.indextrown.uikit-social-loginTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/uikit-social-login.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/uikit-social-login";
+			};
+			name = Debug;
+		};
+		DF7A516D2DA2B9AA00AEEC6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LGX4B4WC66;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.indextrown.uikit-social-loginTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/uikit-social-login.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/uikit-social-login";
+			};
+			name = Release;
+		};
+		DF7A516F2DA2B9AA00AEEC6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LGX4B4WC66;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.indextrown.uikit-social-loginUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "uikit-social-login";
+			};
+			name = Debug;
+		};
+		DF7A51702DA2B9AA00AEEC6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LGX4B4WC66;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.indextrown.uikit-social-loginUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "uikit-social-login";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF7A51352DA2B9A900AEEC6E /* Build configuration list for PBXProject "uikit-social-login" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF7A51692DA2B9AA00AEEC6E /* Debug */,
+				DF7A516A2DA2B9AA00AEEC6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF7A51662DA2B9AA00AEEC6E /* Build configuration list for PBXNativeTarget "uikit-social-login" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF7A51672DA2B9AA00AEEC6E /* Debug */,
+				DF7A51682DA2B9AA00AEEC6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF7A516B2DA2B9AA00AEEC6E /* Build configuration list for PBXNativeTarget "uikit-social-loginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF7A516C2DA2B9AA00AEEC6E /* Debug */,
+				DF7A516D2DA2B9AA00AEEC6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF7A516E2DA2B9AA00AEEC6E /* Build configuration list for PBXNativeTarget "uikit-social-loginUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF7A516F2DA2B9AA00AEEC6E /* Debug */,
+				DF7A51702DA2B9AA00AEEC6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DF7CA0082DA3D40600365E93 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.11.0;
+			};
+		};
+		DF7CA01B2DA3D42D00365E93 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		DF9AEEE12DA405C300466CC6 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kakao/kakao-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.24.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DF7CA0092DA3D40600365E93 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF7CA0082DA3D40600365E93 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		DF7CA00B2DA3D40600365E93 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF7CA0082DA3D40600365E93 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		DF7CA00D2DA3D40600365E93 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF7CA0082DA3D40600365E93 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		DF7CA00F2DA3D40600365E93 /* FirebaseDynamicLinks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF7CA0082DA3D40600365E93 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDynamicLinks;
+		};
+		DF7CA0112DA3D40600365E93 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF7CA0082DA3D40600365E93 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		DF7CA0132DA3D40600365E93 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF7CA0082DA3D40600365E93 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		DF7CA0152DA3D40600365E93 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF7CA0082DA3D40600365E93 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		DF7CA0172DA3D40600365E93 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF7CA0082DA3D40600365E93 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		DF7CA0192DA3D40600365E93 /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF7CA0082DA3D40600365E93 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+		DF7CA01C2DA3D42D00365E93 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF7CA01B2DA3D42D00365E93 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		DF7CA01E2DA3D42D00365E93 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF7CA01B2DA3D42D00365E93 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		DF9AEEE22DA405C300466CC6 /* KakaoSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF9AEEE12DA405C300466CC6 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDK;
+		};
+		DF9AEEE42DA405C300466CC6 /* KakaoSDKAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF9AEEE12DA405C300466CC6 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKAuth;
+		};
+		DF9AEEE62DA405C300466CC6 /* KakaoSDKCommon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF9AEEE12DA405C300466CC6 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKCommon;
+		};
+		DF9AEEE82DA405C300466CC6 /* KakaoSDKUser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF9AEEE12DA405C300466CC6 /* XCRemoteSwiftPackageReference "kakao-ios-sdk" */;
+			productName = KakaoSDKUser;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DF7A51322DA2B9A900AEEC6E /* Project object */;
+}

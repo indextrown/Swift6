@@ -1,0 +1,28 @@
+### Xcode ###
+# Ignore Swift5 folder
+Swift5/
+test.swift
+Swift5.xcodeproj/
+App/MyFirstApp/MyFirstApp.xcodeproj/
+App/DiceGame/DiceGame.xcodeproj/
+App/RPSGame/RPSGame.xcodeproj/
+App/RandomBingo/RandomBingo.xcodeproj/
+App/UpDownGame/UpDownGame.xcodeproj/
+
+# 기타 무시할 항목들
+.DS_Store
+xcuserdata/
+*.xcuserstate
+*.xcschememanagement.plist
+GoogleService-Info.plist
+
+# Build outputs
+**/.build/
+**/build/
+**/Build/
+**/DerivedData/
+
+*.xcconfig
+Config.xcconfig
+
+*.plist
