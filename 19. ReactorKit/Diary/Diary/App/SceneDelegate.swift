@@ -7,6 +7,7 @@
 // https://ios-development.tistory.com/314
 
 import UIKit
+import CoreData
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -17,19 +18,25 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let scene = (scene as? UIWindowScene) else { return }
-        
-        // coredata
-        let appDelegate = UIApplication.shared.delegate as? AppDelegate
-        appDelegate?.persistentContainer
+        guard let scene = (scene as? UIWindowScene),
+              let appDelegate = UIApplication.shared.delegate as? AppDelegate
+        else { return }
         
         
         window = UIWindow(windowScene: scene)
-        let naviVC = UINavigationController(rootViewController: DiaryListViewController())
+        let naviVC = UINavigationController(
+            rootViewController: DiaryListViewController(
+                reactor: DiaryListViewReactor(
+                    initialState: .init(),
+                    coreData: DiaryCoreData(
+                        viewContext: appDelegate.persistentContainer.viewContext)
+                )
+            )
+        )
         window?.rootViewController = naviVC
         window?.makeKeyAndVisible()
     }
-
+    
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.
