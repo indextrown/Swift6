@@ -38,8 +38,8 @@ final class DiaryListViewReactor: Reactor {
         var cellDataList: [DiaryListCellData] = []
         var list: [DiaryItem] = []
         var selectedItems: Set<String> = []
-        var deleteSuccess: Bool = false
-        var error: CoreDataError?
+        @Pulse var deleteSuccess: Bool = false
+        @Pulse var error: CoreDataError?
     }
     
     let initialState: State
@@ -58,7 +58,7 @@ final class DiaryListViewReactor: Reactor {
                 .withUnretained(self)
                 .flatMap { reactor, mode in
                     Observable.concat(
-                        Observable.just(Mutation.setMode(mode)),
+                        .just(Mutation.setMode(mode)),
                         reactor.createCellData(
                             list: reactor.currentState.list,
                             mode: mode,
@@ -72,9 +72,30 @@ final class DiaryListViewReactor: Reactor {
                 .just(Mutation.setQuery(query))
             )
         case .selectItem(let id):
-            return .empty()
+            return updateSelectedItems(id: id)
+                .withUnretained(self)
+                .flatMap { reactor, selectedItems in
+                    Observable.concat(
+                        .just(Mutation.setSelectedItems(selectedItems)),
+                        reactor.createCellData(
+                            list: reactor.currentState.list,
+                            mode: reactor.currentState.listMode,
+                            selectedItems: selectedItems
+                        ).map { Mutation.setCellDataList($0) }
+                    )
+                }
+            
         case .delete:
-            return .empty()
+            for id in currentState.selectedItems {
+                if case let .failure(error) = coreData.deleteDiary(id: id) {
+                    // 에러 발생 시
+                    return Observable.just(.setError(error))
+                }
+            }
+            return .concat(
+                .just(.deletedSuccess(true)),
+                .just(.setMode(.normal))
+            )
         }
     }
     
@@ -98,7 +119,9 @@ final class DiaryListViewReactor: Reactor {
         }
         return state
     }
-    
+}
+
+extension DiaryListViewReactor {
     func getList(query: String) -> Observable<Mutation> {
         let result = coreData.getDiaryList(query: query)
         switch result {

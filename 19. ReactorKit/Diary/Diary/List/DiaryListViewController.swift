@@ -157,27 +157,44 @@ class DiaryListViewController: UIViewController, View {
             }
             .disposed(by: disposeBag)
         
+        reactor.pulse(\.$deleteSuccess)
+            .map { _ in Reactor.Action.refresh }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        
+        reactor.pulse(\.$error)
+            .compactMap { $0 }
+            .withUnretained(self)
+            .bind { vc, error in
+                let alert = UIAlertController(
+                    title: "에러",
+                    message: error.description,
+                    preferredStyle: .alert
+                )
+                alert.addAction(UIAlertAction.init(title: "확인", style: .default))
+                vc.navigationController?.present(alert, animated: true)
+            }.disposed(by: disposeBag)
+        
         // mode에 따라 기능 달라짐,
         // 삭제: 삭제할 아이템 선택
         tableView.rx.modelSelected(DiaryListCellData.self)
-            .filter { _ in
-                return reactor.currentState.listMode == .delete
-            }
+            .filter { _ in return reactor.currentState.listMode == .delete }
             .map { Reactor.Action.selectItem(id: $0.diary.id) }
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
+            // 이것도 가능하긴 함
 //            .bind { cellData in
 //                reactor.action.onNext(.selectItem(id: cellData.diary.id))
 //            }
 
         // 일반: 상세로 이동
-        tableView.rx.modelSelected(DiaryListCellData.self)
-            .filter { _ in
-                return reactor.currentState.listMode == .normal
-            }
-            .bind { <#DiaryListCellData#> in
-                <#code#>
-            }
+//        tableView.rx.modelSelected(DiaryListCellData.self)
+//            .filter { _ in
+//                return reactor.currentState.listMode == .normal
+//            }
+//            .bind { <#DiaryListCellData#> in
+//
+//            }
         
         writeButton.rx.tap
             .bind { [weak self] in
@@ -194,6 +211,11 @@ class DiaryListViewController: UIViewController, View {
                     animated: true
                 )
             }.disposed(by: disposeBag)
+        
+        deleteButton.rx.tap
+            .map { Reactor.Action.delete }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
         
         // bind(onNext)말고 다른 방법
         // onNext보다 깔끔하고, 이벤트 흐름이 끊기지 않고 바로 전달되는 장점 있다.
