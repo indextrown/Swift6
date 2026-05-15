@@ -45,7 +45,7 @@ class DiaryListViewController: UIViewController, View {
         let tableView = UITableView()
         tableView.separatorStyle = .none
         tableView.contentInset = .init(
-            top: 16, left: 0, bottom: 0, right: 16
+            top: 16, left: 0, bottom: 16, right: 0
         )
         tableView.keyboardDismissMode = .onDrag
         tableView.register(DiaryListCell.self, forCellReuseIdentifier: DiaryListCell.id)
@@ -188,13 +188,24 @@ class DiaryListViewController: UIViewController, View {
 //            }
 
         // 일반: 상세로 이동
-//        tableView.rx.modelSelected(DiaryListCellData.self)
-//            .filter { _ in
-//                return reactor.currentState.listMode == .normal
-//            }
-//            .bind { <#DiaryListCellData#> in
-//
-//            }
+        tableView.rx.modelSelected(DiaryListCellData.self)
+            .filter { _ in
+                return reactor.currentState.listMode == .normal
+            }
+            .map { $0.diary.id }
+            .withUnretained(self)
+            .bind { vc, id in
+                let coreData = reactor.coreData
+                let reactor = DiaryDetailReactor(
+                    initialState: .init(id: id),
+                    coreData: coreData
+                )
+                let viewController = DiaryDetailViewController(reactor: reactor)
+                vc.navigationController?.pushViewController(
+                    viewController,
+                    animated: true
+                )
+            }.disposed(by: disposeBag)
         
         writeButton.rx.tap
             .bind { [weak self] in
@@ -202,7 +213,7 @@ class DiaryListViewController: UIViewController, View {
                 guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
                 let viewContext = appDelegate.persistentContainer.viewContext
                 
-                let writeVC = DiaryViewController(reactor: DiaryWriteViewReactor(
+                let writeVC = DiaryWriteViewController(reactor: DiaryWriteViewReactor(
                     initialState: .init(),
                     coreData: DiaryCoreData(viewContext: viewContext))
                 )

@@ -26,4 +26,9 @@ class EventBus {
 
 enum DiaryEvent {
     case refreshList
+    case refreshDetail
 }
+
+
+
+

@@ -19,7 +19,7 @@ import SnapKit
 import ReactorKit
 import RxCocoa
 
-final class DiaryViewController: UIViewController, ReactorKit.View {
+final class DiaryWriteViewController: UIViewController, ReactorKit.View {
     // typealias Reactor = DiaryWriteViewReactor
     var disposeBag = DisposeBag()
     
@@ -113,11 +113,13 @@ final class DiaryViewController: UIViewController, ReactorKit.View {
         // TODO: - reactor state 바인딩
         titleTextField.rx.text.orEmpty
             .distinctUntilChanged()
+            .skip(1)
             .bind { title in
                 reactor.action.onNext(.inputTitle(title))
             }.disposed(by: disposeBag)
         
         contentTextView.rx.text.orEmpty
+            .skip(1)
             .distinctUntilChanged()
             .bind { content in
                 reactor.action.onNext(.inputContent(content))
@@ -127,6 +129,18 @@ final class DiaryViewController: UIViewController, ReactorKit.View {
             .bind {
                 reactor.action.onNext(.save)
             }.disposed(by: disposeBag)
+        
+        reactor.state
+            .map { $0.title }
+            .distinctUntilChanged()
+            .bind(to: titleTextField.rx.text)
+            .disposed(by: disposeBag)
+        
+        reactor.state
+            .map { $0.content }
+            .distinctUntilChanged()
+            .bind(to: contentTextView.rx.text)
+            .disposed(by: disposeBag)
         
         reactor.state                   // Observable<State>
             .map { $0.isRequestEnable } // Observable<Bool>
